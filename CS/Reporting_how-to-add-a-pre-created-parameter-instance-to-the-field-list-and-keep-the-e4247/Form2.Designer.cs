@@ -105,7 +105,6 @@
             this.commandBarItem46 = new DevExpress.XtraReports.UserDesigner.CommandBarItem();
             this.barMdiChildrenListItem1 = new DevExpress.XtraBars.BarMdiChildrenListItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.designBar2 = new DevExpress.XtraReports.UserDesigner.DesignBar();
             this.designBar3 = new DevExpress.XtraReports.UserDesigner.DesignBar();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
@@ -140,6 +139,7 @@
             this.groupAndSortDockPanel1_Container = new DevExpress.XtraReports.UserDesigner.DesignControlContainer();
             this.errorListDockPanel1 = new DevExpress.XtraReports.UserDesigner.ErrorListDockPanel();
             this.errorListDockPanel1_Container = new DevExpress.XtraReports.UserDesigner.DesignControlContainer();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xrDesignPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrDesignBarManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.recentlyUsedItemsComboBox1)).BeginInit();
@@ -169,10 +169,10 @@
             // xrDesignPanel1
             // 
             this.xrDesignPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xrDesignPanel1.Location = new System.Drawing.Point(194, 84);
+            this.xrDesignPanel1.Location = new System.Drawing.Point(185, 70);
             this.xrDesignPanel1.Name = "xrDesignPanel1";
             this.xrDesignPanel1.Padding = new System.Windows.Forms.Padding(1);
-            this.xrDesignPanel1.Size = new System.Drawing.Size(466, 347);
+            this.xrDesignPanel1.Size = new System.Drawing.Size(475, 364);
             this.xrDesignPanel1.TabIndex = 0;
             // 
             // xrDesignBarManager1
@@ -289,7 +289,7 @@
             this.designRepositoryItemComboBox2});
             this.xrDesignBarManager1.StatusBar = this.designBar5;
             this.xrDesignBarManager1.Toolbar = this.designBar2;
-            this.xrDesignBarManager1.TransparentEditors = true;
+            this.xrDesignBarManager1.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.True;
             this.xrDesignBarManager1.Updates.AddRange(new string[] {
             "Toolbox"});
             this.xrDesignBarManager1.XRDesignPanel = this.xrDesignPanel1;
@@ -332,7 +332,7 @@
             this.commandBarItem31.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReport;
             this.commandBarItem31.Hint = "Create a new blank report";
             this.commandBarItem31.Id = 34;
-            this.commandBarItem31.ImageIndex = 9;
+            this.commandBarItem31.ImageOptions.ImageIndex = 9;
             this.commandBarItem31.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N));
             this.commandBarItem31.Name = "commandBarItem31";
             // 
@@ -340,9 +340,9 @@
             // 
             this.commandBarItem39.Caption = "New via &Wizard...";
             this.commandBarItem39.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReportWizard;
-            this.commandBarItem39.Glyph = ((System.Drawing.Image)(resources.GetObject("commandBarItem39.Glyph")));
             this.commandBarItem39.Hint = "Create a new report using the Wizard";
             this.commandBarItem39.Id = 60;
+            this.commandBarItem39.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("commandBarItem39.ImageOptions.Image")));
             this.commandBarItem39.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W));
             this.commandBarItem39.Name = "commandBarItem39";
             // 
@@ -352,7 +352,7 @@
             this.commandBarItem32.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.OpenFile;
             this.commandBarItem32.Hint = "Open a report";
             this.commandBarItem32.Id = 35;
-            this.commandBarItem32.ImageIndex = 10;
+            this.commandBarItem32.ImageOptions.ImageIndex = 10;
             this.commandBarItem32.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O));
             this.commandBarItem32.Name = "commandBarItem32";
             // 
@@ -363,7 +363,7 @@
             this.commandBarItem33.Enabled = false;
             this.commandBarItem33.Hint = "Save the report";
             this.commandBarItem33.Id = 36;
-            this.commandBarItem33.ImageIndex = 11;
+            this.commandBarItem33.ImageOptions.ImageIndex = 11;
             this.commandBarItem33.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S));
             this.commandBarItem33.Name = "commandBarItem33";
             // 
@@ -415,7 +415,7 @@
             this.commandBarItem37.Enabled = false;
             this.commandBarItem37.Hint = "Undo the last operation";
             this.commandBarItem37.Id = 40;
-            this.commandBarItem37.ImageIndex = 15;
+            this.commandBarItem37.ImageOptions.ImageIndex = 15;
             this.commandBarItem37.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z));
             this.commandBarItem37.Name = "commandBarItem37";
             // 
@@ -426,7 +426,7 @@
             this.commandBarItem38.Enabled = false;
             this.commandBarItem38.Hint = "Redo the last operation";
             this.commandBarItem38.Id = 41;
-            this.commandBarItem38.ImageIndex = 16;
+            this.commandBarItem38.ImageOptions.ImageIndex = 16;
             this.commandBarItem38.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y));
             this.commandBarItem38.Name = "commandBarItem38";
             // 
@@ -437,7 +437,7 @@
             this.commandBarItem34.Enabled = false;
             this.commandBarItem34.Hint = "Delete the control and copy it to the clipboard";
             this.commandBarItem34.Id = 37;
-            this.commandBarItem34.ImageIndex = 12;
+            this.commandBarItem34.ImageOptions.ImageIndex = 12;
             this.commandBarItem34.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X));
             this.commandBarItem34.Name = "commandBarItem34";
             // 
@@ -448,7 +448,7 @@
             this.commandBarItem35.Enabled = false;
             this.commandBarItem35.Hint = "Copy the control to the clipboard";
             this.commandBarItem35.Id = 38;
-            this.commandBarItem35.ImageIndex = 13;
+            this.commandBarItem35.ImageOptions.ImageIndex = 13;
             this.commandBarItem35.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C));
             this.commandBarItem35.Name = "commandBarItem35";
             // 
@@ -459,7 +459,7 @@
             this.commandBarItem36.Enabled = false;
             this.commandBarItem36.Hint = "Add the control from the clipboard";
             this.commandBarItem36.Id = 39;
-            this.commandBarItem36.ImageIndex = 14;
+            this.commandBarItem36.ImageOptions.ImageIndex = 14;
             this.commandBarItem36.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V));
             this.commandBarItem36.Name = "commandBarItem36";
             // 
@@ -523,6 +523,7 @@
             // barDockPanelsListItem1
             // 
             this.barDockPanelsListItem1.Caption = "&Windows";
+            this.barDockPanelsListItem1.DockManager = null;
             this.barDockPanelsListItem1.Id = 50;
             this.barDockPanelsListItem1.Name = "barDockPanelsListItem1";
             this.barDockPanelsListItem1.ShowCustomizationItem = false;
@@ -553,9 +554,9 @@
             this.commandColorBarItem1.CloseSubMenuOnClick = false;
             this.commandColorBarItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ForeColor;
             this.commandColorBarItem1.Enabled = false;
-            this.commandColorBarItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("commandColorBarItem1.Glyph")));
             this.commandColorBarItem1.Hint = "Set the foreground color of the control";
             this.commandColorBarItem1.Id = 5;
+            this.commandColorBarItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("commandColorBarItem1.ImageOptions.Image")));
             this.commandColorBarItem1.Name = "commandColorBarItem1";
             // 
             // commandColorBarItem2
@@ -565,9 +566,9 @@
             this.commandColorBarItem2.CloseSubMenuOnClick = false;
             this.commandColorBarItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BackColor;
             this.commandColorBarItem2.Enabled = false;
-            this.commandColorBarItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("commandColorBarItem2.Glyph")));
             this.commandColorBarItem2.Hint = "Set the background color of the control";
             this.commandColorBarItem2.Id = 6;
+            this.commandColorBarItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("commandColorBarItem2.ImageOptions.Image")));
             this.commandColorBarItem2.Name = "commandColorBarItem2";
             // 
             // barSubItem7
@@ -587,7 +588,7 @@
             this.commandBarItem1.Enabled = false;
             this.commandBarItem1.Hint = "Make the font bold";
             this.commandBarItem1.Id = 2;
-            this.commandBarItem1.ImageIndex = 0;
+            this.commandBarItem1.ImageOptions.ImageIndex = 0;
             this.commandBarItem1.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B));
             this.commandBarItem1.Name = "commandBarItem1";
             // 
@@ -598,7 +599,7 @@
             this.commandBarItem2.Enabled = false;
             this.commandBarItem2.Hint = "Make the font italic";
             this.commandBarItem2.Id = 3;
-            this.commandBarItem2.ImageIndex = 1;
+            this.commandBarItem2.ImageOptions.ImageIndex = 1;
             this.commandBarItem2.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I));
             this.commandBarItem2.Name = "commandBarItem2";
             // 
@@ -609,7 +610,7 @@
             this.commandBarItem3.Enabled = false;
             this.commandBarItem3.Hint = "Underline the font";
             this.commandBarItem3.Id = 4;
-            this.commandBarItem3.ImageIndex = 2;
+            this.commandBarItem3.ImageOptions.ImageIndex = 2;
             this.commandBarItem3.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U));
             this.commandBarItem3.Name = "commandBarItem3";
             // 
@@ -631,7 +632,7 @@
             this.commandBarItem4.Enabled = false;
             this.commandBarItem4.Hint = "Align the control\'s text to the left";
             this.commandBarItem4.Id = 7;
-            this.commandBarItem4.ImageIndex = 5;
+            this.commandBarItem4.ImageOptions.ImageIndex = 5;
             this.commandBarItem4.Name = "commandBarItem4";
             // 
             // commandBarItem5
@@ -641,7 +642,7 @@
             this.commandBarItem5.Enabled = false;
             this.commandBarItem5.Hint = "Align the control\'s text to the center";
             this.commandBarItem5.Id = 8;
-            this.commandBarItem5.ImageIndex = 6;
+            this.commandBarItem5.ImageOptions.ImageIndex = 6;
             this.commandBarItem5.Name = "commandBarItem5";
             // 
             // commandBarItem6
@@ -651,7 +652,7 @@
             this.commandBarItem6.Enabled = false;
             this.commandBarItem6.Hint = "Align the control\'s text to the right";
             this.commandBarItem6.Id = 9;
-            this.commandBarItem6.ImageIndex = 7;
+            this.commandBarItem6.ImageOptions.ImageIndex = 7;
             this.commandBarItem6.Name = "commandBarItem6";
             // 
             // commandBarItem7
@@ -661,7 +662,7 @@
             this.commandBarItem7.Enabled = false;
             this.commandBarItem7.Hint = "Justify the control\'s text";
             this.commandBarItem7.Id = 10;
-            this.commandBarItem7.ImageIndex = 8;
+            this.commandBarItem7.ImageOptions.ImageIndex = 8;
             this.commandBarItem7.Name = "commandBarItem7";
             // 
             // barSubItem9
@@ -685,7 +686,7 @@
             this.commandBarItem9.Enabled = false;
             this.commandBarItem9.Hint = "Left align the selected controls";
             this.commandBarItem9.Id = 12;
-            this.commandBarItem9.ImageIndex = 18;
+            this.commandBarItem9.ImageOptions.ImageIndex = 18;
             this.commandBarItem9.Name = "commandBarItem9";
             // 
             // commandBarItem10
@@ -695,7 +696,7 @@
             this.commandBarItem10.Enabled = false;
             this.commandBarItem10.Hint = "Align the centers of the selected controls vertically";
             this.commandBarItem10.Id = 13;
-            this.commandBarItem10.ImageIndex = 19;
+            this.commandBarItem10.ImageOptions.ImageIndex = 19;
             this.commandBarItem10.Name = "commandBarItem10";
             // 
             // commandBarItem11
@@ -705,7 +706,7 @@
             this.commandBarItem11.Enabled = false;
             this.commandBarItem11.Hint = "Right align the selected controls";
             this.commandBarItem11.Id = 14;
-            this.commandBarItem11.ImageIndex = 20;
+            this.commandBarItem11.ImageOptions.ImageIndex = 20;
             this.commandBarItem11.Name = "commandBarItem11";
             // 
             // commandBarItem12
@@ -715,7 +716,7 @@
             this.commandBarItem12.Enabled = false;
             this.commandBarItem12.Hint = "Align the tops of the selected controls";
             this.commandBarItem12.Id = 15;
-            this.commandBarItem12.ImageIndex = 21;
+            this.commandBarItem12.ImageOptions.ImageIndex = 21;
             this.commandBarItem12.Name = "commandBarItem12";
             // 
             // commandBarItem13
@@ -725,7 +726,7 @@
             this.commandBarItem13.Enabled = false;
             this.commandBarItem13.Hint = "Align the centers of the selected controls horizontally";
             this.commandBarItem13.Id = 16;
-            this.commandBarItem13.ImageIndex = 22;
+            this.commandBarItem13.ImageOptions.ImageIndex = 22;
             this.commandBarItem13.Name = "commandBarItem13";
             // 
             // commandBarItem14
@@ -735,7 +736,7 @@
             this.commandBarItem14.Enabled = false;
             this.commandBarItem14.Hint = "Align the bottoms of the selected controls";
             this.commandBarItem14.Id = 17;
-            this.commandBarItem14.ImageIndex = 23;
+            this.commandBarItem14.ImageOptions.ImageIndex = 23;
             this.commandBarItem14.Name = "commandBarItem14";
             // 
             // commandBarItem8
@@ -745,7 +746,7 @@
             this.commandBarItem8.Enabled = false;
             this.commandBarItem8.Hint = "Align the positions of the selected controls to the grid";
             this.commandBarItem8.Id = 11;
-            this.commandBarItem8.ImageIndex = 17;
+            this.commandBarItem8.ImageOptions.ImageIndex = 17;
             this.commandBarItem8.Name = "commandBarItem8";
             // 
             // barSubItem10
@@ -766,7 +767,7 @@
             this.commandBarItem15.Enabled = false;
             this.commandBarItem15.Hint = "Make the selected controls have the same width";
             this.commandBarItem15.Id = 18;
-            this.commandBarItem15.ImageIndex = 24;
+            this.commandBarItem15.ImageOptions.ImageIndex = 24;
             this.commandBarItem15.Name = "commandBarItem15";
             // 
             // commandBarItem16
@@ -776,7 +777,7 @@
             this.commandBarItem16.Enabled = false;
             this.commandBarItem16.Hint = "Size the selected controls to the grid";
             this.commandBarItem16.Id = 19;
-            this.commandBarItem16.ImageIndex = 25;
+            this.commandBarItem16.ImageOptions.ImageIndex = 25;
             this.commandBarItem16.Name = "commandBarItem16";
             // 
             // commandBarItem17
@@ -786,7 +787,7 @@
             this.commandBarItem17.Enabled = false;
             this.commandBarItem17.Hint = "Make the selected controls have the same height";
             this.commandBarItem17.Id = 20;
-            this.commandBarItem17.ImageIndex = 26;
+            this.commandBarItem17.ImageOptions.ImageIndex = 26;
             this.commandBarItem17.Name = "commandBarItem17";
             // 
             // commandBarItem18
@@ -796,7 +797,7 @@
             this.commandBarItem18.Enabled = false;
             this.commandBarItem18.Hint = "Make the selected controls the same size";
             this.commandBarItem18.Id = 21;
-            this.commandBarItem18.ImageIndex = 27;
+            this.commandBarItem18.ImageOptions.ImageIndex = 27;
             this.commandBarItem18.Name = "commandBarItem18";
             // 
             // barSubItem11
@@ -817,7 +818,7 @@
             this.commandBarItem19.Enabled = false;
             this.commandBarItem19.Hint = "Make the spacing between the selected controls equal";
             this.commandBarItem19.Id = 22;
-            this.commandBarItem19.ImageIndex = 28;
+            this.commandBarItem19.ImageOptions.ImageIndex = 28;
             this.commandBarItem19.Name = "commandBarItem19";
             // 
             // commandBarItem20
@@ -827,7 +828,7 @@
             this.commandBarItem20.Enabled = false;
             this.commandBarItem20.Hint = "Increase the spacing between the selected controls";
             this.commandBarItem20.Id = 23;
-            this.commandBarItem20.ImageIndex = 29;
+            this.commandBarItem20.ImageOptions.ImageIndex = 29;
             this.commandBarItem20.Name = "commandBarItem20";
             // 
             // commandBarItem21
@@ -837,7 +838,7 @@
             this.commandBarItem21.Enabled = false;
             this.commandBarItem21.Hint = "Decrease the spacing between the selected controls";
             this.commandBarItem21.Id = 24;
-            this.commandBarItem21.ImageIndex = 30;
+            this.commandBarItem21.ImageOptions.ImageIndex = 30;
             this.commandBarItem21.Name = "commandBarItem21";
             // 
             // commandBarItem22
@@ -847,7 +848,7 @@
             this.commandBarItem22.Enabled = false;
             this.commandBarItem22.Hint = "Remove the spacing between the selected controls";
             this.commandBarItem22.Id = 25;
-            this.commandBarItem22.ImageIndex = 31;
+            this.commandBarItem22.ImageOptions.ImageIndex = 31;
             this.commandBarItem22.Name = "commandBarItem22";
             // 
             // barSubItem12
@@ -868,7 +869,7 @@
             this.commandBarItem23.Enabled = false;
             this.commandBarItem23.Hint = "Make the spacing between the selected controls equal";
             this.commandBarItem23.Id = 26;
-            this.commandBarItem23.ImageIndex = 32;
+            this.commandBarItem23.ImageOptions.ImageIndex = 32;
             this.commandBarItem23.Name = "commandBarItem23";
             // 
             // commandBarItem24
@@ -878,7 +879,7 @@
             this.commandBarItem24.Enabled = false;
             this.commandBarItem24.Hint = "Increase the spacing between the selected controls";
             this.commandBarItem24.Id = 27;
-            this.commandBarItem24.ImageIndex = 33;
+            this.commandBarItem24.ImageOptions.ImageIndex = 33;
             this.commandBarItem24.Name = "commandBarItem24";
             // 
             // commandBarItem25
@@ -888,7 +889,7 @@
             this.commandBarItem25.Enabled = false;
             this.commandBarItem25.Hint = "Decrease the spacing between the selected controls";
             this.commandBarItem25.Id = 28;
-            this.commandBarItem25.ImageIndex = 34;
+            this.commandBarItem25.ImageOptions.ImageIndex = 34;
             this.commandBarItem25.Name = "commandBarItem25";
             // 
             // commandBarItem26
@@ -898,7 +899,7 @@
             this.commandBarItem26.Enabled = false;
             this.commandBarItem26.Hint = "Remove the spacing between the selected controls";
             this.commandBarItem26.Id = 29;
-            this.commandBarItem26.ImageIndex = 35;
+            this.commandBarItem26.ImageOptions.ImageIndex = 35;
             this.commandBarItem26.Name = "commandBarItem26";
             // 
             // barSubItem13
@@ -917,7 +918,7 @@
             this.commandBarItem27.Enabled = false;
             this.commandBarItem27.Hint = "Horizontally center the selected controls within a band";
             this.commandBarItem27.Id = 30;
-            this.commandBarItem27.ImageIndex = 36;
+            this.commandBarItem27.ImageOptions.ImageIndex = 36;
             this.commandBarItem27.Name = "commandBarItem27";
             // 
             // commandBarItem28
@@ -927,7 +928,7 @@
             this.commandBarItem28.Enabled = false;
             this.commandBarItem28.Hint = "Vertically center the selected controls within a band";
             this.commandBarItem28.Id = 31;
-            this.commandBarItem28.ImageIndex = 37;
+            this.commandBarItem28.ImageOptions.ImageIndex = 37;
             this.commandBarItem28.Name = "commandBarItem28";
             // 
             // barSubItem14
@@ -946,7 +947,7 @@
             this.commandBarItem29.Enabled = false;
             this.commandBarItem29.Hint = "Bring the selected controls to the front";
             this.commandBarItem29.Id = 32;
-            this.commandBarItem29.ImageIndex = 38;
+            this.commandBarItem29.ImageOptions.ImageIndex = 38;
             this.commandBarItem29.Name = "commandBarItem29";
             // 
             // commandBarItem30
@@ -956,7 +957,7 @@
             this.commandBarItem30.Enabled = false;
             this.commandBarItem30.Hint = "Move the selected controls to the back";
             this.commandBarItem30.Id = 33;
-            this.commandBarItem30.ImageIndex = 39;
+            this.commandBarItem30.ImageOptions.ImageIndex = 39;
             this.commandBarItem30.Name = "commandBarItem30";
             // 
             // barSubItem15
@@ -973,6 +974,7 @@
             // 
             // commandBarCheckItem1
             // 
+            this.commandBarCheckItem1.BindableChecked = true;
             this.commandBarCheckItem1.Caption = "&Tabbed Interface";
             this.commandBarCheckItem1.Checked = true;
             this.commandBarCheckItem1.CheckedCommand = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowTabbedInterface;
@@ -989,7 +991,7 @@
             this.commandBarItem44.Enabled = false;
             this.commandBarItem44.Hint = "Arrange all open documents cascaded, so that they overlap each other";
             this.commandBarItem44.Id = 67;
-            this.commandBarItem44.ImageIndex = 40;
+            this.commandBarItem44.ImageOptions.ImageIndex = 40;
             this.commandBarItem44.Name = "commandBarItem44";
             // 
             // commandBarItem45
@@ -999,7 +1001,7 @@
             this.commandBarItem45.Enabled = false;
             this.commandBarItem45.Hint = "Arrange all open documents from top to bottom";
             this.commandBarItem45.Id = 68;
-            this.commandBarItem45.ImageIndex = 41;
+            this.commandBarItem45.ImageOptions.ImageIndex = 41;
             this.commandBarItem45.Name = "commandBarItem45";
             // 
             // commandBarItem46
@@ -1009,7 +1011,7 @@
             this.commandBarItem46.Enabled = false;
             this.commandBarItem46.Hint = "Arrange all open documents from left to right";
             this.commandBarItem46.Id = 69;
-            this.commandBarItem46.ImageIndex = 42;
+            this.commandBarItem46.ImageOptions.ImageIndex = 42;
             this.commandBarItem46.Name = "commandBarItem46";
             // 
             // barMdiChildrenListItem1
@@ -1024,12 +1026,6 @@
             this.barButtonItem1.Id = 75;
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Add Parameter DesignTool";
-            this.barButtonItem2.Id = 76;
-            this.barButtonItem2.Name = "barButtonItem2";
             // 
             // designBar2
             // 
@@ -1072,10 +1068,10 @@
             // 
             this.barEditItem1.Caption = "Font Name";
             this.barEditItem1.Edit = this.recentlyUsedItemsComboBox1;
+            this.barEditItem1.EditWidth = 120;
             this.barEditItem1.Hint = "Font Name";
             this.barEditItem1.Id = 0;
             this.barEditItem1.Name = "barEditItem1";
-            this.barEditItem1.Width = 120;
             // 
             // recentlyUsedItemsComboBox1
             // 
@@ -1084,16 +1080,15 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.recentlyUsedItemsComboBox1.DropDownRows = 12;
             this.recentlyUsedItemsComboBox1.Name = "recentlyUsedItemsComboBox1";
-            this.recentlyUsedItemsComboBox1.UseParentBackground = true;
             // 
             // barEditItem2
             // 
             this.barEditItem2.Caption = "Font Size";
             this.barEditItem2.Edit = this.designRepositoryItemComboBox1;
+            this.barEditItem2.EditWidth = 55;
             this.barEditItem2.Hint = "Font Size";
             this.barEditItem2.Id = 1;
             this.barEditItem2.Name = "barEditItem2";
-            this.barEditItem2.Width = 55;
             // 
             // designRepositoryItemComboBox1
             // 
@@ -1101,7 +1096,6 @@
             this.designRepositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.designRepositoryItemComboBox1.Name = "designRepositoryItemComboBox1";
-            this.designRepositoryItemComboBox1.UseParentBackground = true;
             // 
             // designBar4
             // 
@@ -1154,7 +1148,7 @@
             this.barStaticItem1.AutoSize = DevExpress.XtraBars.BarStaticItemSize.Spring;
             this.barStaticItem1.Id = 42;
             this.barStaticItem1.Name = "barStaticItem1";
-            this.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near;
+            this.barStaticItem1.Size = new System.Drawing.Size(32, 0);
             this.barStaticItem1.Width = 32;
             // 
             // bar1
@@ -1176,7 +1170,7 @@
             this.commandBarItem48.Enabled = false;
             this.commandBarItem48.Hint = "Zoom out the design surface";
             this.commandBarItem48.Id = 72;
-            this.commandBarItem48.ImageIndex = 43;
+            this.commandBarItem48.ImageOptions.ImageIndex = 43;
             this.commandBarItem48.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Subtract));
             this.commandBarItem48.Name = "commandBarItem48";
             // 
@@ -1184,11 +1178,11 @@
             // 
             this.xrZoomBarEditItem1.Caption = "Zoom";
             this.xrZoomBarEditItem1.Edit = this.designRepositoryItemComboBox2;
+            this.xrZoomBarEditItem1.EditWidth = 70;
             this.xrZoomBarEditItem1.Enabled = false;
             this.xrZoomBarEditItem1.Hint = "Select or input the zoom factor";
             this.xrZoomBarEditItem1.Id = 73;
             this.xrZoomBarEditItem1.Name = "xrZoomBarEditItem1";
-            this.xrZoomBarEditItem1.Width = 70;
             // 
             // designRepositoryItemComboBox2
             // 
@@ -1196,7 +1190,6 @@
             this.designRepositoryItemComboBox2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.designRepositoryItemComboBox2.Name = "designRepositoryItemComboBox2";
-            this.designRepositoryItemComboBox2.UseParentBackground = true;
             // 
             // commandBarItem49
             // 
@@ -1205,7 +1198,7 @@
             this.commandBarItem49.Enabled = false;
             this.commandBarItem49.Hint = "Zoom in the design surface";
             this.commandBarItem49.Id = 74;
-            this.commandBarItem49.ImageIndex = 44;
+            this.commandBarItem49.ImageOptions.ImageIndex = 44;
             this.commandBarItem49.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Add));
             this.commandBarItem49.Name = "commandBarItem49";
             // 
@@ -1214,28 +1207,32 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(910, 84);
+            this.barDockControlTop.Manager = this.xrDesignBarManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(910, 70);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 591);
-            this.barDockControlBottom.Size = new System.Drawing.Size(910, 25);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 594);
+            this.barDockControlBottom.Manager = this.xrDesignBarManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(910, 22);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 84);
-            this.barDockControlLeft.Size = new System.Drawing.Size(29, 507);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 70);
+            this.barDockControlLeft.Manager = this.xrDesignBarManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(20, 524);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(910, 84);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 507);
+            this.barDockControlRight.Location = new System.Drawing.Point(910, 70);
+            this.barDockControlRight.Manager = this.xrDesignBarManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 524);
             // 
             // xrDesignDockManager1
             // 
@@ -1260,10 +1257,10 @@
             this.panelContainer1.Controls.Add(this.propertyGridDockPanel1);
             this.panelContainer1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.panelContainer1.ID = new System.Guid("789f9afc-92ce-4df3-b78f-6cdcf31ed7a6");
-            this.panelContainer1.Location = new System.Drawing.Point(660, 84);
+            this.panelContainer1.Location = new System.Drawing.Point(660, 70);
             this.panelContainer1.Name = "panelContainer1";
             this.panelContainer1.OriginalSize = new System.Drawing.Size(250, 200);
-            this.panelContainer1.Size = new System.Drawing.Size(250, 507);
+            this.panelContainer1.Size = new System.Drawing.Size(250, 524);
             this.panelContainer1.Text = "panelContainer1";
             // 
             // panelContainer2
@@ -1273,10 +1270,11 @@
             this.panelContainer2.Controls.Add(this.fieldListDockPanel1);
             this.panelContainer2.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.panelContainer2.ID = new System.Guid("a35e90fe-01f8-43e1-83d3-2b171e8f4cfc");
+            this.panelContainer2.ImageOptions.ImageIndex = 0;
             this.panelContainer2.Location = new System.Drawing.Point(0, 0);
             this.panelContainer2.Name = "panelContainer2";
-            this.panelContainer2.OriginalSize = new System.Drawing.Size(250, 261);
-            this.panelContainer2.Size = new System.Drawing.Size(250, 381);
+            this.panelContainer2.OriginalSize = new System.Drawing.Size(250, 381);
+            this.panelContainer2.Size = new System.Drawing.Size(250, 394);
             this.panelContainer2.Tabbed = true;
             this.panelContainer2.Text = "panelContainer2";
             // 
@@ -1285,11 +1283,11 @@
             this.fieldListDockPanel1.Controls.Add(this.fieldListDockPanel1_Container);
             this.fieldListDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.fieldListDockPanel1.ID = new System.Guid("faf69838-a93f-4114-83e8-d0d09cc5ce95");
-            this.fieldListDockPanel1.ImageIndex = 0;
-            this.fieldListDockPanel1.Location = new System.Drawing.Point(4, 23);
+            this.fieldListDockPanel1.ImageOptions.ImageIndex = 0;
+            this.fieldListDockPanel1.Location = new System.Drawing.Point(4, 26);
             this.fieldListDockPanel1.Name = "fieldListDockPanel1";
-            this.fieldListDockPanel1.OriginalSize = new System.Drawing.Size(244, 214);
-            this.fieldListDockPanel1.Size = new System.Drawing.Size(242, 326);
+            this.fieldListDockPanel1.OriginalSize = new System.Drawing.Size(242, 326);
+            this.fieldListDockPanel1.Size = new System.Drawing.Size(243, 337);
             this.fieldListDockPanel1.Text = "Field List";
             this.fieldListDockPanel1.XRDesignPanel = this.xrDesignPanel1;
             // 
@@ -1297,7 +1295,7 @@
             // 
             this.fieldListDockPanel1_Container.Location = new System.Drawing.Point(0, 0);
             this.fieldListDockPanel1_Container.Name = "fieldListDockPanel1_Container";
-            this.fieldListDockPanel1_Container.Size = new System.Drawing.Size(242, 326);
+            this.fieldListDockPanel1_Container.Size = new System.Drawing.Size(243, 337);
             this.fieldListDockPanel1_Container.TabIndex = 0;
             // 
             // reportExplorerDockPanel1
@@ -1305,11 +1303,11 @@
             this.reportExplorerDockPanel1.Controls.Add(this.reportExplorerDockPanel1_Container);
             this.reportExplorerDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.reportExplorerDockPanel1.ID = new System.Guid("fb3ec6cc-3b9b-4b9c-91cf-cff78c1edbf1");
-            this.reportExplorerDockPanel1.ImageIndex = 3;
-            this.reportExplorerDockPanel1.Location = new System.Drawing.Point(4, 23);
+            this.reportExplorerDockPanel1.ImageOptions.ImageIndex = 3;
+            this.reportExplorerDockPanel1.Location = new System.Drawing.Point(4, 26);
             this.reportExplorerDockPanel1.Name = "reportExplorerDockPanel1";
-            this.reportExplorerDockPanel1.OriginalSize = new System.Drawing.Size(244, 214);
-            this.reportExplorerDockPanel1.Size = new System.Drawing.Size(242, 326);
+            this.reportExplorerDockPanel1.OriginalSize = new System.Drawing.Size(242, 326);
+            this.reportExplorerDockPanel1.Size = new System.Drawing.Size(243, 337);
             this.reportExplorerDockPanel1.Text = "Report Explorer";
             this.reportExplorerDockPanel1.XRDesignPanel = this.xrDesignPanel1;
             // 
@@ -1317,7 +1315,7 @@
             // 
             this.reportExplorerDockPanel1_Container.Location = new System.Drawing.Point(0, 0);
             this.reportExplorerDockPanel1_Container.Name = "reportExplorerDockPanel1_Container";
-            this.reportExplorerDockPanel1_Container.Size = new System.Drawing.Size(242, 326);
+            this.reportExplorerDockPanel1_Container.Size = new System.Drawing.Size(243, 337);
             this.reportExplorerDockPanel1_Container.TabIndex = 0;
             // 
             // propertyGridDockPanel1
@@ -1325,19 +1323,19 @@
             this.propertyGridDockPanel1.Controls.Add(this.propertyGridDockPanel1_Container);
             this.propertyGridDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.propertyGridDockPanel1.ID = new System.Guid("b38d12c3-cd06-4dec-b93d-63a0088e495a");
-            this.propertyGridDockPanel1.ImageIndex = 2;
-            this.propertyGridDockPanel1.Location = new System.Drawing.Point(0, 381);
+            this.propertyGridDockPanel1.ImageOptions.ImageIndex = 2;
+            this.propertyGridDockPanel1.Location = new System.Drawing.Point(0, 394);
             this.propertyGridDockPanel1.Name = "propertyGridDockPanel1";
-            this.propertyGridDockPanel1.OriginalSize = new System.Drawing.Size(250, 262);
-            this.propertyGridDockPanel1.Size = new System.Drawing.Size(250, 126);
-            this.propertyGridDockPanel1.Text = "Property Grid";
+            this.propertyGridDockPanel1.OriginalSize = new System.Drawing.Size(250, 126);
+            this.propertyGridDockPanel1.Size = new System.Drawing.Size(250, 130);
+            this.propertyGridDockPanel1.Text = "Properties";
             this.propertyGridDockPanel1.XRDesignPanel = this.xrDesignPanel1;
             // 
             // propertyGridDockPanel1_Container
             // 
-            this.propertyGridDockPanel1_Container.Location = new System.Drawing.Point(4, 23);
+            this.propertyGridDockPanel1_Container.Location = new System.Drawing.Point(4, 26);
             this.propertyGridDockPanel1_Container.Name = "propertyGridDockPanel1_Container";
-            this.propertyGridDockPanel1_Container.Size = new System.Drawing.Size(242, 99);
+            this.propertyGridDockPanel1_Container.Size = new System.Drawing.Size(243, 101);
             this.propertyGridDockPanel1_Container.TabIndex = 0;
             // 
             // toolBoxDockPanel1
@@ -1345,19 +1343,19 @@
             this.toolBoxDockPanel1.Controls.Add(this.toolBoxDockPanel1_Container);
             this.toolBoxDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
             this.toolBoxDockPanel1.ID = new System.Guid("161a5a1a-d9b9-4f06-9ac4-d0c3e507c54f");
-            this.toolBoxDockPanel1.ImageIndex = 4;
-            this.toolBoxDockPanel1.Location = new System.Drawing.Point(29, 84);
+            this.toolBoxDockPanel1.ImageOptions.ImageIndex = 4;
+            this.toolBoxDockPanel1.Location = new System.Drawing.Point(20, 70);
             this.toolBoxDockPanel1.Name = "toolBoxDockPanel1";
             this.toolBoxDockPanel1.OriginalSize = new System.Drawing.Size(165, 200);
-            this.toolBoxDockPanel1.Size = new System.Drawing.Size(165, 507);
-            this.toolBoxDockPanel1.Text = "Tool Box";
+            this.toolBoxDockPanel1.Size = new System.Drawing.Size(165, 524);
+            this.toolBoxDockPanel1.Text = "Toolbox";
             this.toolBoxDockPanel1.XRDesignPanel = this.xrDesignPanel1;
             // 
             // toolBoxDockPanel1_Container
             // 
-            this.toolBoxDockPanel1_Container.Location = new System.Drawing.Point(4, 23);
+            this.toolBoxDockPanel1_Container.Location = new System.Drawing.Point(3, 26);
             this.toolBoxDockPanel1_Container.Name = "toolBoxDockPanel1_Container";
-            this.toolBoxDockPanel1_Container.Size = new System.Drawing.Size(157, 480);
+            this.toolBoxDockPanel1_Container.Size = new System.Drawing.Size(158, 495);
             this.toolBoxDockPanel1_Container.TabIndex = 0;
             // 
             // panelContainer3
@@ -1367,10 +1365,11 @@
             this.panelContainer3.Controls.Add(this.errorListDockPanel1);
             this.panelContainer3.Dock = DevExpress.XtraBars.Docking.DockingStyle.Bottom;
             this.panelContainer3.ID = new System.Guid("86247b59-7cab-44d8-95c1-80be053795b0");
-            this.panelContainer3.Location = new System.Drawing.Point(194, 431);
+            this.panelContainer3.ImageOptions.ImageIndex = 1;
+            this.panelContainer3.Location = new System.Drawing.Point(185, 434);
             this.panelContainer3.Name = "panelContainer3";
             this.panelContainer3.OriginalSize = new System.Drawing.Size(200, 160);
-            this.panelContainer3.Size = new System.Drawing.Size(466, 160);
+            this.panelContainer3.Size = new System.Drawing.Size(475, 160);
             this.panelContainer3.Tabbed = true;
             this.panelContainer3.Text = "panelContainer3";
             // 
@@ -1379,11 +1378,11 @@
             this.groupAndSortDockPanel1.Controls.Add(this.groupAndSortDockPanel1_Container);
             this.groupAndSortDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.groupAndSortDockPanel1.ID = new System.Guid("4bab159e-c495-4d67-87dc-f4e895da443e");
-            this.groupAndSortDockPanel1.ImageIndex = 1;
-            this.groupAndSortDockPanel1.Location = new System.Drawing.Point(4, 23);
+            this.groupAndSortDockPanel1.ImageOptions.ImageIndex = 1;
+            this.groupAndSortDockPanel1.Location = new System.Drawing.Point(3, 27);
             this.groupAndSortDockPanel1.Name = "groupAndSortDockPanel1";
-            this.groupAndSortDockPanel1.OriginalSize = new System.Drawing.Size(467, 113);
-            this.groupAndSortDockPanel1.Size = new System.Drawing.Size(458, 105);
+            this.groupAndSortDockPanel1.OriginalSize = new System.Drawing.Size(458, 105);
+            this.groupAndSortDockPanel1.Size = new System.Drawing.Size(469, 103);
             this.groupAndSortDockPanel1.Text = "Group and Sort";
             this.groupAndSortDockPanel1.XRDesignPanel = this.xrDesignPanel1;
             // 
@@ -1391,7 +1390,7 @@
             // 
             this.groupAndSortDockPanel1_Container.Location = new System.Drawing.Point(0, 0);
             this.groupAndSortDockPanel1_Container.Name = "groupAndSortDockPanel1_Container";
-            this.groupAndSortDockPanel1_Container.Size = new System.Drawing.Size(458, 105);
+            this.groupAndSortDockPanel1_Container.Size = new System.Drawing.Size(469, 103);
             this.groupAndSortDockPanel1_Container.TabIndex = 0;
             // 
             // errorListDockPanel1
@@ -1399,11 +1398,11 @@
             this.errorListDockPanel1.Controls.Add(this.errorListDockPanel1_Container);
             this.errorListDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.errorListDockPanel1.ID = new System.Guid("5a9a01fd-6e95-4e81-a8c4-ac63153d7488");
-            this.errorListDockPanel1.ImageIndex = 5;
-            this.errorListDockPanel1.Location = new System.Drawing.Point(4, 23);
+            this.errorListDockPanel1.ImageOptions.ImageIndex = 5;
+            this.errorListDockPanel1.Location = new System.Drawing.Point(3, 27);
             this.errorListDockPanel1.Name = "errorListDockPanel1";
-            this.errorListDockPanel1.OriginalSize = new System.Drawing.Size(467, 113);
-            this.errorListDockPanel1.Size = new System.Drawing.Size(458, 105);
+            this.errorListDockPanel1.OriginalSize = new System.Drawing.Size(458, 105);
+            this.errorListDockPanel1.Size = new System.Drawing.Size(469, 103);
             this.errorListDockPanel1.Text = "Scripts Errors";
             this.errorListDockPanel1.XRDesignPanel = this.xrDesignPanel1;
             // 
@@ -1411,8 +1410,14 @@
             // 
             this.errorListDockPanel1_Container.Location = new System.Drawing.Point(0, 0);
             this.errorListDockPanel1_Container.Name = "errorListDockPanel1_Container";
-            this.errorListDockPanel1_Container.Size = new System.Drawing.Size(458, 105);
+            this.errorListDockPanel1_Container.Size = new System.Drawing.Size(469, 103);
             this.errorListDockPanel1_Container.TabIndex = 0;
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Add Parameter DesignTool";
+            this.barButtonItem2.Id = 76;
+            this.barButtonItem2.Name = "barButtonItem2";
             // 
             // Form2
             // 
@@ -1445,6 +1450,7 @@
             this.groupAndSortDockPanel1.ResumeLayout(false);
             this.errorListDockPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
