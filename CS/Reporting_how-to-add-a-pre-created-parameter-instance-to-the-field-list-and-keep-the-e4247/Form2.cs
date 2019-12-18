@@ -22,7 +22,7 @@ namespace Parameters {
         private void AddField(IComponent objeto, string desiredName) {
             IDesignerHost host = xrDesignPanel1.GetService(typeof(IDesignerHost)) as IDesignerHost;
             if (host != null) {
-                DesignTool.AddToContainer(host, objeto, desiredName);
+                DesignToolHelper.AddToContainer(host, objeto, desiredName);
             }
         }
     }

@@ -24,7 +24,7 @@ Namespace Parameters
         Private Sub AddField(ByVal objeto As IComponent, ByVal desiredName As String)
             Dim host As IDesignerHost = TryCast(xrDesignPanel1.GetService(GetType(IDesignerHost)), IDesignerHost)
             If host IsNot Nothing Then
-                DesignTool.AddToContainer(host, objeto, desiredName)
+                DesignToolHelper.AddToContainer(host, objeto, desiredName)
             End If
         End Sub
     End Class
