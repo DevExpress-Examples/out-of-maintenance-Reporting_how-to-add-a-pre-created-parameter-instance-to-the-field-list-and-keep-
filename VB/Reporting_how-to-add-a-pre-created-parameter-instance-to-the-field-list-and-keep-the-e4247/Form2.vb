@@ -24,7 +24,9 @@ Namespace Parameters
         Private Sub AddField(ByVal objeto As IComponent, ByVal desiredName As String)
             Dim host As IDesignerHost = TryCast(xrDesignPanel1.GetService(GetType(IDesignerHost)), IDesignerHost)
             If host IsNot Nothing Then
+#Disable Warning CS0612 ' Type or member is obsolete
                 DesignToolHelper.AddToContainer(host, objeto, desiredName)
+#Enable Warning CS0612 ' Type or member is obsolete
             End If
         End Sub
     End Class

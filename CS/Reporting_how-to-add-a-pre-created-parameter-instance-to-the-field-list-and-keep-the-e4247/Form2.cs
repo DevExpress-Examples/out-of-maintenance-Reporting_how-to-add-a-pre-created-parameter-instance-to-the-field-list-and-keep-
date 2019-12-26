@@ -22,7 +22,9 @@ namespace Parameters {
         private void AddField(IComponent objeto, string desiredName) {
             IDesignerHost host = xrDesignPanel1.GetService(typeof(IDesignerHost)) as IDesignerHost;
             if (host != null) {
+#pragma warning disable CS0612 // Type or member is obsolete
                 DesignToolHelper.AddToContainer(host, objeto, desiredName);
+#pragma warning restore CS0612 // Type or member is obsolete
             }
         }
     }
